@@ -22,19 +22,19 @@
     <div class="row text-center">
       <div class="col-md-6 d-flex flex-column">
         <h3 class="name" id="name">Name</h3>
-        <h3 class="health" id="player1-health">Health</h3>
-        <img class="img-fluid img-player1 mb-4" id="img-player1" src="//placehold.it/300x500" alt="player 1">
-        <button class="btn btn-lg btn-primary mb-2">Action 1</button>
-        <button class="btn btn-lg btn-primary mb-2">Action 2</button>
-        <button class="btn btn-lg btn-primary mb-2">Action 3</button>
+        <h3 class="health" id="player1-health">Health: <span id="health1">100</span></h3>
+        <img class="img-fluid img-player1 mb-4" id="img-player1" src="//placehold.it/300x400" alt="player 1">
+        <button class="btn btn-lg btn-primary mb-2" onclick="action1('player2')">Action 1</button>
+        <button class="btn btn-lg btn-primary mb-2" onclick="action2('player2')">Action 2</button>
+        <button class="btn btn-lg btn-primary mb-2" onclick="action3('player2')">Action 3</button>
       </div>
       <div class="col-md-6 d-flex flex-column">
         <h3 class="name" id="name">Name</h3>
-        <h3 class="health" id="player2-health">Health</h3>
-        <img class="img-fluid img-player1 mb-4" id="img-player1" src="//placehold.it/300x500" alt="player 2">
-        <button class="btn btn-lg btn-primary mb-2">Action 1</button>
-        <button class="btn btn-lg btn-primary mb-2">Action 2</button>
-        <button class="btn btn-lg btn-primary mb-2">Action 3</button>
+        <h3 class="health" id="player2-health">Health: <span id="health2">100</span></h3>
+        <img class="img-fluid img-player1 mb-4" id="img-player1" src="//placehold.it/300x400" alt="player 2">
+        <button class="btn btn-lg btn-primary mb-2"  onclick="action1('player1')">Action 1</button>
+        <button class="btn btn-lg btn-primary mb-2"  onclick="action2('player1')">Action 2</button>
+        <button class="btn btn-lg btn-primary mb-2"  onclick="action3('player1')">Action 3</button>
       </div>
     </div>
   </main>
