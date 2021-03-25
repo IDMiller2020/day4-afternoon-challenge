@@ -1,0 +1,98 @@
+// font-family: 'Permanent Marker',
+// cursive;
+// font-family: 'Roboto',
+// sans-serif;
+.py-10 {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.no-select {
+    user-select: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(./img/bgfinal.jpg);
+    background-size: cover;
+    background-position: center;
+    // filter: grayscale(80%);
+    color: #fff;
+}
+
+img {
+    max-height: 300px;
+}
+
+.red-shadow {
+    box-shadow: 0rem 1rem 6rem red !important;
+    transition: .3s ease;
+}
+
+.overlay {
+    position: absolute;
+    display: flex !important;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    z-index: 50;
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 3px;
+}
+
+main {
+    flex-grow: 1;
+    z-index: 22;
+    position: relative;
+}
+
+.content {
+    max-width: 70%;
+}
+
+.title {
+    font-family: 'Permanent Marker', cursive; 
+    letter-spacing: 5px;
+}
+
+.names {
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 3px;
+    font-size: 2rem;
+}
+
+.name,
+.health {
+    font-family: 'Roboto',
+    sans-serif !important;
+    text-transform: uppercase !important;
+}
+
+.btn {
+    font-family: 'Roboto' !important;
+    min-width: 400px;
+    text-transform: uppercase;
+}
+
+.btn-reset {
+    z-index: 100 !important;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
